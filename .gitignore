@@ -1,2 +1,11 @@
 *.DS_Store
 *.pdf
+*.nls
+*.nlo
+*.out
+*.log
+*.ilg
+*.aux
+*.nls*
+/AIAA_template.nls
+/AIAA_template.nls?
