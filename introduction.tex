@@ -6,4 +6,18 @@ How fast FVAN responds, depends strongly on how fast the actuator is. Lighter ac
 
 Before determining where to place the SMA actuator, a gas turbine controller must compensate for the slower SMA actuators while controlling either one variable (fuel flow rate with FVAN schedule) or two variables (fuel flow rate and FVAN). This study aims to evaluate how current SMA actuators perform with their dynamic characters in transient operation. If current SMA actuators do not meet the performance and safety requirements, the second aim is to determine how fast SMA dynamics must be to meet the requirements.
 
+Based on small-scale test cases from Boeing \cite{Mabe:2008,Mabe:2008:Paris},
+transients characteristics are also subject to various SMA configurations.
+Using two-sets of monolithic Ni-40ti alloy actuators arranged antagonistically,
+nozzle area can be actively controlled in both expansion and contraction. This
+approach reduces the complex mechanism required for wire-based SMA methods,
+and also simplifies the balancing of SMA elements in a passively cooled
+configuration. The ability to actively apply forces in opposing directions
+allows more fine-grained control over actuator displacement given a broad range
+of mass flows, velocities, and temperatures. SMA's configured in competing
+directions also decouple actuator speed from the cooling rate of a single
+actuator when operated in reverse. Given this configuration, a maximum of 20\%
+change in FVAN area can be achieved on the order of 5-10 minutes, in either
+direction, in a relatively underdamped system.
+
 The paper is divided into three parts. First, the gas turbine engine model used in this study will be presented. Particular details about FVAN modeling will be given in addition to multi-design point cycle design values. After covering the gas turbine model, the controller development processes for scheduled and controlled dynamic FVAN will be discussed. Finally, the results for the transient operation with the dynamic FVAN will be shown and analyzed. 
