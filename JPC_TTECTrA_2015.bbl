@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{Mabe:2008}
+Mabe, J.~H., Calkins, F.~T., and Alkislar, M.~B., \enquote{Variable Area Jet
+  Nozzle Using Shape Memory Alloy Actuators in an Antagonistic Design,} {\em
+  Industrial and Commercial Applications of Smart Structures Technologies\/},
+  edited by L.~P. Davis, B.~K. Henderson, and M.~B. McMickell, Vol. 6930 of
+  {\em Proceedings of SPIE\/}, 2008.
+
+\bibitem{Mabe:2008:Paris}
+Mabe, J., \enquote{Variable Area Jet Nozzle for Noise Reduction Using Shape
+  Memory Alloy Actuators,} {\em Acoustics '08 Paris\/}, 2008, pp. 5487 -- 5492.
+
+\bibitem{Rey:2001}
+Rey, N.~M., Tillman, G., Miller, R.~M., Wynosky, T., Larkin, M.~J., Flamm,
+  J.~D., and Bangert, L.~S., \enquote{Shape Memory Alloy Actuation for a
+  Variable Area Fan Nozzle,} {\em Smart Structures and Materials: Industrial
+  and Commercial Applications of Smart Structures Technologies\/}, edited by
+  A.-M.~R. McGowan, Vol. 4332 of {\em Proceedings of SPIE\/}, 2001, pp. 371 --
+  382.
+
+\bibitem{Barooah:2002}
+Barooah, P. and Rey, N., \enquote{Closed Loop Control of a Shape Memory Alloy
+  Actuation System for Variable Area Fan Nozzle,} {\em Smart Structures and
+  Materials: Modeling, Signal Processing, and Control\/}, edited by V.~S. Rao,
+  Vol. 4693 of {\em Proceedings of SPIE\/}, 2002, pp. 384 -- 395.
+
+\bibitem{Song:2007}
+Song, G., Ma, N., Lee, H.-J., and Arnold, S., \enquote{Design and Control of a
+  Proof-of-Concept Variable Area Exhaust Nozzle Using Shape-Memory Alloy
+  Actuators,} {\em Smart Materials and Structures\/}, Vol.~16, No.~4, 2007,
+  pp.~1342 -- 1347.
+
+\bibitem{Schutte:2012:2}
+Schutte, J., Tai, J.~C., and Mavris, D.~N., \enquote{Multi-Design Point Cycle
+  Design Incorporation into the Environmental Design Space,} {\em 48th AIAA,
+  ASME, SAE, and ASEE Joint Propulsion Conference and Exhibit\/},
+  AIAA-2012-3812, 2012.
+
+\bibitem{Schutte:2012:1}
+Schutte, J., Tai, J., Sands, J., and Mavris, D., \enquote{Cycle Design
+  Exploration Using Multi-Design Point Approach,} {\em Proceedings of ASME
+  Turbo Expo 2012\/}, GT2012-69334, 2012.
+
+\bibitem{Csank:2010}
+Csank, J., May, R.~D., Litt, J.~S., and Guo, T.-H., \enquote{Control Design for
+  a Generic Commercial Aircraft Engine,} {\em 46th AIAA, ASME, SAE, and ASEE
+  Joint Propulsion Conference and Exhibit\/}, AIAA-2010-6629, 2010.
+
+\bibitem{Csank:2014}
+Csank, J.~T. and Zinnecker, A.~M., \enquote{Tool for Turbine Engine Closed-Loop
+  Transient Analysis (TTECTrA) Users' Guide,} Technical Memorandum
+  TM-2014-216663, NASA, 2014.
+
+\end{thebibliography}

@@ -32,14 +32,19 @@
 
 \graphicspath{ {./images/} }
 
-\title{AIAA Latex Template}
+\title{Evaluating the Effect of Actuator Dynamics in Fan Variable Area Nozzle on Gas Turbine Control}
 
 \author{
  Metin F. Ozcan\thanks{Graduate Research Assistant, Aerospace Systems Design Laboratory (ASDL), 275 Ferst Drive NW, Atlanta, GA 30332-0150, and AIAA Student Member.}
- \ , Imon Chakraborty\footnotemark[1]
+ \ , Christopher Perullo\thanks{Research Engineer I, ASDL, and AIAA Member.}
+ \ , Jimmy C. Tai\thanks{Senior Research Engineer, ASDL, and AIAA Member.} 
  \ , and Dimitri N. Mavris\thanks{Boeing Regents Professor of Advanced Aerospace Systems Analysis, Director at ASDL, and AIAA Fellow.}  \\
- {\normalsize\itshape
-  School of Aerospace Engineering, Georgia Institute of Technology, Atlanta, GA, 30332}
+ {\normalsize\itshape School of Aerospace Engineering, Georgia Institute of Technology, Atlanta, GA, 30332}
+\\ \\ \textit{and} \\ \\
+ Jeffrey T. Csank\thanks{Research Engineer, Intelligent Control and Autonomy Branch, and AIAA Member.}
+ \ and Jeffrey C. Chin\thanks{Research Engineer, \textcolor{red}{Missing the branch!}, and AIAA Member.}
+\\
+ {\normalsize\itshape NASA Glenn Research Center, Cleveland, OH, 44135}
 }
 
 % Data used by 'handcarry' option
@@ -64,7 +69,17 @@
 
 \begin{document}
 
-\nomenclature{$TONE$}{The only nomenclature entry, Units go here}
+\nomenclature{$EPR$}{Engine pressure ratio}
+\nomenclature{$BPR$}{Bypass ratio}
+\nomenclature{$N_f$}{Fan rotational speed, RPM}
+\nomenclature{$N_c$}{Core rotational speed, RPM}
+\nomenclature{$W_f$}{Fuel flow rate, lbm/s}
+\nomenclature{$HPC$}{High pressure compressor}
+\nomenclature{$LPC$}{Low pressure compressor}
+\nomenclature{$TTECTrA$}{Tool for Turbine Engine Closed-Loop Transient Analysis}
+\nomenclature{$SSA$}{Small single aisle}
+\nomenclature{$NPSS$}{Numerical Propulsion System Simulation}
+\nomenclature{$FVAN$}{Fan Variable Area Nozzle}
 
 \maketitle
 
@@ -80,80 +95,17 @@
 
 \input{introduction}
 
-\section{The section that follows the introduction}
-Content for this section goes here.
+\section{Gas turbine modeling}
 
-% Two figures side by side
-\begin{figure}[!htb]
-\begin{minipage}[b]{0.5\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{placeholder.png}
-\end{center}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.5\linewidth}
-\begin{center}
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{placeholder.png}
-\end{center}
-\end{minipage}
-\caption{Two placeholder figures side by side}
-\label{fig:side_by_side_placeholders}
-\end{figure}
+\input{gas_turbine_modeling}
 
-\section{Just another section}
+\section{Controller development}
 
-\autoref{eq:example_equation} is the first equation in this document.
+\input{controller_development}
 
-% Example equation
-\begin{equation} \label{eq:example_equation}
-p(z)\approx \frac{k}{NV}
-\end{equation}
+\section{Results}
 
-You can also write down a group of equations as in \autoref{eq:example_eqn_group}.
-
-% Example equation array
-\begin{eqnarray}
-\label{eq:example_eqn_group}
-c_{D} = \frac{2\pi^{D/2}}{D \cdot \Gamma(D/2)} \\
-\Gamma(t) = \int_{0}^{\infty} x^{t} \mathrm{e}^{-x} \frac{\mathrm{d}x}{x} \nonumber
-\end{eqnarray}
-
-\section{A section with a table}
-
-After introducing figures and equations, it is time to introduce a table as in \autoref{tbl:example}.
-
-% Example table
-\begin{table}[!htb]
-\caption{Example table}
-\label{tbl:example}
-\begin{center}
-\begin{tabular}{|c|c|}
-\hline
-\textbf{First column} & \textbf{Second column} \\ \hline
-First item & 1.5 \\ \hline
-Second item & 0.89 \\ \hline
-Third item & 2650 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-The simple table in \autoref{tbl:example} is followed by a more involved example in \autoref{tbl:complex_example}.
-
-\begin{table}[!htb]
-\caption{Evaluation results for the input signals selected from the literature}
-\label{tbl:complex_example}
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|}
-\cline{2-5}
-\multicolumn{1}{c|}{} & \multicolumn{4}{c|}{Density Estimation Evaluation Points} \\
-\cline{2-5}
-\multicolumn{1}{c|}{} & Boundary & Interior & Equilibrium & Overall \\ \hline
-Steps with multisine & 0.0577 & 0.0398 & 0.0206 & 0.0456 \\ \hline
-Triangular wave & 0.1525 & 0.0751 & 0.1069 & 0.1009 \\ \hline
-Step and chop series & 0.0063 & 0.0564 & 0.0464 & 0.0397 \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
+\input{results}
 
 \section{Conclusion}
 
