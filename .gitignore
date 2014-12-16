@@ -7,5 +7,6 @@
 *.ilg
 *.aux
 *.nls*
+*.blg
 /AIAA_template.nls
 /AIAA_template.nls?
