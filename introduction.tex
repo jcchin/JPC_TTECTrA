@@ -1,12 +1,42 @@
-\lettrine[nindent=0pt]{V}{ariable} geometry components promise steady-state improvements in gas turbine performance and safety. However, the improvements come with more complexity in addition to a necessary trade-off study due to the additional actuator system. % not really sure what previous sentence is trying to say what bout:  These improvements increase the complexity of the system, with the additional actuation system, and requires a study .......
-For example, fan variable area nozzle (FVAN) can improve propulsive efficiency, reduce jet noise, increase fan surge margin, and control fan flutter margin. On the other hand, the FVAN actuator system can reduce the efficiency increase due to its extra weight and the additional control variable - variable nozzle area - complicates the control system.  One approach to reduce the complexity of the FVAN is to schedule the variable nozzle area, but this approach does not provide the performance or safety benefit that can be gained by directly controlling the nozzle area. 
+% This file includes the content for the Introduction section
 
-The cost and benefit analysis for FVAN has considered only steady-state analysis so far. What the FVAN area should be at different steady state points can be determined to realize the mentioned benefits. For example, top of climb requires a smaller FVAN area whereas take-off requires a larger FVAN area. However, the gas turbine must transition from one steady-state condition to another safely throughout the mission. During a transition, the FVAN must respond in concert with shaft dynamics to keep the performance and safety benefits.%% is that correct?
- If FVAN doesn't respond in accordance with shaft dynamics, either thrust lapse or stall can occur at different flight conditions. 
+\lettrine[nindent=0pt]{V}{ariable} geometry components promise improvements
+in gas turbine steady-state performance and safety. These improvements 
+increase the complexity of the system with the additional actuation system. For
+example, VAFN can improve propulsive efficiency, reduce jet noise, increase fan 
+surge margin, and control fan flutter margin. On the other hand, the VAFN 
+actuator system can reduce the efficiency increase due to its extra weight and 
+the additional control variable - variable nozzle area - complicates the control 
+system. One approach to reduce the complexity of the FVAN is to schedule the 
+variable nozzle area, but this approach does not provide the performance or 
+safety benefit that can be gained by directly controlling the nozzle area.
 
-How fast FVAN responds, depends strongly on how fast the actuator is. Lighter actuators with shape memory alloys (SMA) \cite{Mabe:2008,Mabe:2008:Paris} were proposed instead of heavy and complex conventional hydraulic actuators to reduce the fuel burn penalty due to actuator weight when FVAN is on-board. The SMA actuators are more flexible and lighter, however the respond slower than hydraulic actuators \cite{Rey:2001,Barooah:2002,Song:2007}. In addition, FVAN is a challenging application for SMA because above a certain temperature SMA material properties transition. Consequently, SMA actuator placement is important for FVAN application.  
+The cost and benefit analysis for VAFN has considered only steady state analysis
+so far. What the VAFN area should be at different steady state points can be 
+determined to realize the mentioned benefits. For example, top of climb requires 
+a smaller VAFN area whereas take-off requires a larger VAFN area. However, the
+gas turbine must switch from one steady state condition to another safely 
+throughout the mission. During a transition from one steady state condition to 
+another, slow VAFN response may cause thrust lapse or stall at different flight 
+conditions.
 
-Before determining the SMA actuator location, a gas turbine controller must compensate for the slower SMA actuators while controlling either one variable (fuel flow rate with FVAN schedule) or two variables (fuel flow rate and FVAN). This study aims to evaluate how current SMA actuators perform with their dynamic characters in transient operation. If current SMA actuators do not meet the performance and safety requirements, the second aim is to determine how fast SMA dynamics must be to meet the requirements.
+The response time of VAFN depends strongly on actuator dynamics. Lighter 
+actuators with shape memory alloys (SMA) \cite{Mabe:2008,Mabe:2008:Paris} 
+were proposed instead of heavy and complex conventional hydraulic actuators to
+reduce the fuel burn penalty due to actuator weight when VAFN is on-board. 
+The SMA actuators are more flexible and lighter, , however the respond slower 
+than hydraulic actuators \cite{Rey:2001,Barooah:2002,Song:2007}. In addition, 
+VAFN is a challenging application for SMA because above a certain temperature 
+SMA material properties transition. Consequently, SMA actuator placement is 
+important for VAFN application.
+
+Before determining where to place the SMA actuator, a gas turbine controller 
+must compensate for the slower SMA actuators while controlling either one 
+variable (fuel flow rate with VAFN schedule) or two variables (fuel flow rate and 
+VAFN). This study aims to evaluate how current SMA actuators perform with 
+their dynamic characters in transient operation. If current SMA actuators do not 
+meet the performance and safety requirements, the second aim is to determine 
+how fast SMA dynamics must be to meet the requirements.
 
 Based on small-scale test cases from Boeing \cite{Mabe:2008,Mabe:2008:Paris},
 transients characteristics are also subject to various SMA configurations.
@@ -19,7 +49,12 @@ allows more fine-grained control over actuator displacement given a broad range
 of mass flows, velocities, and temperatures. SMA's configured in competing
 directions also decouple actuator speed from the cooling rate of a single
 actuator when operated in reverse. Given this configuration, a maximum of 20\%
-change in FVAN area can be achieved on the order of 5-10 minutes, in either
+change in VAFN area can be achieved on the order of 5-10 minutes, in either
 direction, in a relatively underdamped system.
 
-The paper is divided into three parts. First, the gas turbine engine model used in this study will be presented. Particular details about FVAN modeling will be given in addition to multi-design point cycle design values. After covering the gas turbine model, the controller development processes for scheduled and controlled dynamic FVAN will be discussed. Finally, the results for the transient operation with the dynamic FVAN will be shown and analyzed. 
+The paper is divided into three parts. First, the gas turbine engine model used in 
+this study will be presented. Particular details about VAFN modeling will be given 
+in addition to multi-design point cycle design values. After covering the gas 
+turbine model, the controller development processes for scheduled and controlled
+dynamic VAFN will be discussed. Finally, the results for the transient operation 
+with the dynamic VAFN will be shown and analyzed.

@@ -1,4 +1,5 @@
-\documentclass[]{aiaa-tc}% insert '[draft]' option to show overfull boxes
+% This file is the main document file for the JPC 2015 TTECTrA paper
+\documentclass[]{aiaa-tc} % insert '[draft]' option to show overfull boxes
 
 \usepackage{mathtools,amssymb}
 
@@ -7,21 +8,21 @@
 \usepackage{array,multirow,rotating}
 \usepackage{ifthen}
 \usepackage{graphicx}
-\usepackage{varioref}%  smart page, figure, table, and equation referencing
-\usepackage{wrapfig}%   wrap figures/tables in text (i.e., Di Vinci style)
+\usepackage{varioref}% smart page, figure, table, and equation referencing     
+\usepackage{wrapfig}% wrap figures/tables in text (i.e., Di Vinci style)
 \usepackage{threeparttable}% tables with footnotes
-\usepackage{dcolumn}%   decimal-aligned tabular math columns
+\usepackage{dcolumn}% decimal-aligned tabular math columns
  \newcolumntype{d}{D{.}{.}{-1}}
-\usepackage{nomencl}%   nomenclature generation via makeindex
+\usepackage{nomencl}% nomenclature generation via makeindex
 \usepackage{makeidx}
  \makenomenclature
 \usepackage{subfigure}% subcaptions for subfigures
 \usepackage{subfigmat}% matrices of similar subfigures, aka small mulitples
-\usepackage{fancyvrb}%  extended verbatim environments
+\usepackage{fancyvrb}% extended verbatim environments
  \fvset{fontsize=\footnotesize,xleftmargin=2em}
-\usepackage{lettrine}%  dropped capital letter at beginning of paragraph
+\usepackage{lettrine}% dropped capital letter at beginning of paragraph
 %\usepackage[dvips]{dropping}% alternative dropped capital package
-\usepackage{hyperref}%  hyperlinks [must be loaded after dropping]
+\usepackage{hyperref}% hyperlinks [must be loaded after dropping]
 
 \hypersetup{
   colorlinks   = true, %Colours links instead of ugly boxes
@@ -32,17 +33,24 @@
 
 \graphicspath{ {./images/} }
 
-\title{Evaluating the Effect of Actuator Dynamics in Fan Variable Area Nozzle on Gas Turbine Control}
+\title{Evaluating the Effect of Actuator Dynamics in Variable Area Fan Nozzle on
+ Gas Turbine Control}
 
 \author{
- Metin F. Ozcan\thanks{Graduate Research Assistant, Aerospace Systems Design Laboratory (ASDL), 275 Ferst Drive NW, Atlanta, GA 30332-0150, and AIAA Student Member.}
+ Metin F. Ozcan\thanks{Graduate Research Assistant, Aerospace Systems 
+ Design Laboratory (ASDL), 275 Ferst Drive NW, Atlanta, GA 30332-0150, and 
+ AIAA Student Member.}
  \ , Christopher Perullo\thanks{Research Engineer I, ASDL, and AIAA Member.}
  \ , Jimmy C. Tai\thanks{Senior Research Engineer, ASDL, and AIAA Member.} 
- \ , and Dimitri N. Mavris\thanks{Boeing Regents Professor of Advanced Aerospace Systems Analysis, Director at ASDL, and AIAA Fellow.}  \\
- {\normalsize\itshape School of Aerospace Engineering, Georgia Institute of Technology, Atlanta, GA, 30332}
+ \ , and Dimitri N. Mavris\thanks{Boeing Regents Professor of Advanced 
+ Aerospace Systems Analysis, Director at ASDL, and AIAA Fellow.}  \\
+ {\normalsize\itshape School of Aerospace Engineering, Georgia Institute of 
+ Technology, Atlanta, GA, 30332}
 \\ \\ \textit{and} \\ \\
- Jeffrey T. Csank\thanks{Research Engineer, Intelligent Control and Autonomy Branch, and AIAA Member.}
- \ and Jeffrey C. Chin\thanks{Research Engineer, Propulsion Systems Analysis Branch, and non-AIAA Member.}
+ Jeffrey T. Csank\thanks{Research Engineer, Intelligent Control and Autonomy 
+ Branch, and AIAA Member.}
+ \ and Jeffrey C. Chin\thanks{Research Engineer, Propulsion Systems Analysis 
+ Branch, and non-AIAA Member.}
 \\
  {\normalsize\itshape NASA Glenn Research Center, Cleveland, OH, 44135}
 }
@@ -76,10 +84,11 @@
 \nomenclature{$W_f$}{Fuel flow rate, lbm/s}
 \nomenclature{$HPC$}{High pressure compressor}
 \nomenclature{$LPC$}{Low pressure compressor}
-\nomenclature{$TTECTrA$}{Tool for Turbine Engine Closed-Loop Transient Analysis}
+\nomenclature{$TTECTrA$}{Tool for Turbine Engine Closed-Loop Transient 
+Analysis}
 \nomenclature{$SSA$}{Small single aisle}
 \nomenclature{$NPSS$}{Numerical Propulsion System Simulation}
-\nomenclature{$FVAN$}{Fan Variable Area Nozzle}
+\nomenclature{$VAFN$}{Variable Area Fan Nozzle}
 
 \maketitle
 
