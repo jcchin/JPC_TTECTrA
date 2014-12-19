@@ -2,7 +2,38 @@
 
 A high BPR separate flow turbofan model in small single aisle (SSA) thrust class 
 was developed using multi-design point cycle design \cite{Schutte:2012:2,
-Schutte:2012:1} in NPSS. This section will include details about the gas turbine 
-design. In addition, modeling the VAFN will be discussed. The developed NPSS 
+Schutte:2012:1} in Numerical Propulsion System Simulation. The modeled 
+turbofan is in 28,000 lbf thrust class and the model is a transient model with only 
+shaft dynamics. The design characteristics of the turbofan engine is given in 
+\autoref{tbl:turbofan_design}.
+
+% Turbofan model design characteristics list
+\begin{table}[!htb]
+\caption{Turbofan engine design characteristics}
+\label{tbl:turbofan_design}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Design variable} & \textbf{Value} \\ \hline
+Fan design PR  & 1.68 \\ \hline
+Fan design efficiency & 0.89 \\ \hline
+Fan design Nc (RPM) & 5222 \\ \hline
+BPR & 5.10 \\ \hline
+LPC design PR  & 1.93 \\ \hline
+LPC design efficiency & 0.92 \\ \hline
+LPC design Nc (RPM) & 4817 \\ \hline
+HPC design PR  & 9.36 \\ \hline
+HPC design efficiency & 0.87 \\ \hline
+HPC design Nc (RPM) & 12286 \\ \hline
+Tt4 (\degree R) & 3300 \\ \hline
+HPT PR & 6.0 \\ \hline
+HPT efficiency & 0.88 \\ \hline
+LPT PR & 6.32 \\ \hline
+LPT efficiency & 0.89 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+In addition, modeling the VAFN will be discussed. The developed NPSS 
 gas turbine model can also be included in a Matlab Simulink model for dynamic 
 modeling or controller development.
